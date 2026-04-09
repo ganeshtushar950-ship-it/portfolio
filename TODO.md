@@ -1,8 +1,2 @@
-# Task: Add another instance of photo.jpg to home page (Completed)
+# Task Progress: Remove blue bar from home page\n\n## Steps from Approved Plan:\n- [x] **1. Create TODO.md** - Tracking file created.\n- [x] **2. Edit app/components/HomePage.tsx** - Removed bottom CTA blue bar section (`bg-gradient-to-r from-indigo-600 to-blue-600`).\n- [x] **3. Verified** - File updated successfully, TypeScript/ESLint errors fixed by precise removal.\n- [x] **4. Task complete** - Blue bar removed from home page.\n
 
-Previous content preserved above.
-
-## Completed:
-- Added second photo.jpg Image in HomePage.tsx "About Me" section (responsive rectangular layout beside text)
-
-Run `npm run dev` to view at localhost:3000

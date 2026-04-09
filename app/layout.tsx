@@ -3,8 +3,8 @@ import "./globals.css";
 import Navigation from "./components/Navigation";
 
 export const metadata: Metadata = {
-  title: "Kritigya's Portfolio - Teaching Internship",
-  description: "Portfolio showcasing my IT teaching internship experience and professional development",
+  title: "Tushar Ganesh's Portfolio - VPED 441 Internship",
+  description: "Portfolio showcasing my IT teaching internship goals, materials, and professional development",
 };
 
 export default function RootLayout({

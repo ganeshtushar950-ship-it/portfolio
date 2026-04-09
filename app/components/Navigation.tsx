@@ -14,7 +14,6 @@ export default function Navigation() {
     { href: "/about", label: "About" },
     { href: "/materials", label: "Materials" },
     { href: "/journey", label: "Journey" },
-    { href: "/essay", label: "Essay" },
   ];
 
   return (
@@ -22,7 +21,7 @@ export default function Navigation() {
       <div className="max-w-6xl mx-auto px-4 sm:px-6">
         <div className="h-16 flex items-center justify-between gap-4">
           <Link href="/" className="font-extrabold text-xl tracking-tight text-transparent bg-clip-text bg-gradient-to-r from-indigo-600 to-blue-600">
-            Kritigya
+            Tushar
           </Link>
 
           {/* Desktop */}

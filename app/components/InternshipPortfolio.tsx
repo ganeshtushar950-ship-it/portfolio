@@ -10,22 +10,24 @@ import { useState } from "react";
 export default function InternshipPortfolio() {
   const [activeTab, setActiveTab] = useState("about");
   const profile = {
-    name: "Kritigya Katwal",
+    name: "Tushar Ganesh",
+    college: "Aspire College (Kathmandu University)",
     institution: "Adarsh Secondary School",
     course: "B.Tech.Ed.IT, 7th Semester",
-    duration: "40 Hours Teaching",
+    academicYear: "2025",
     role: "Teaching Intern",
+    courseCode: "VPED 441",
   };
 
   const drivePhotosFolderId = "10oqZ3-2ehk6yC4hzN9kv7kCDFdOgvjR1";
   const drivePhotosFolderUrl = `https://drive.google.com/drive/folders/${drivePhotosFolderId}?usp=drive_link`;
 
   const journey = [
-    { title: "Effective Lesson Planning", desc: "Develop instructional design skills combining theory with practical IT exercises and hands-on activities." },
-    { title: "Classroom Management", desc: "Create engaging learning environment, promote teamwork, and maintain safety awareness in practical IT labs." },
-    { title: "Assessment & Feedback", desc: "Master formative and summative assessment techniques to evaluate student learning and provide constructive feedback." },
-    { title: "Technical Communication", desc: "Explain complex IT concepts using visual aids, demonstrations, and analogies for diverse learning styles." },
-    { title: "Reflective Practice", desc: "Maintain teaching logs, reflect on sessions, and seek mentor feedback to continuously improve instructional methods." },
+    { title: "Lesson Planning & Instruction", desc: "Prepare clear, structured lessons connected to real classroom activities for students of different learning levels." },
+    { title: "Classroom Management", desc: "Manage time, maintain discipline, and promote student engagement—especially during hands-on IT sessions." },
+    { title: "Assessment & Feedback", desc: "Use written and practical assessments to understand student progress and provide constructive feedback for improvement." },
+    { title: "Presentation & Communication", desc: "Explain complex IT concepts in an approachable, interesting way using examples, visual aids, and interactive tools." },
+    { title: "Reflective Practice", desc: "Reflect regularly through teaching logs and mentor discussions to identify strengths and areas for growth." },
   ];
 
   return (
@@ -40,12 +42,12 @@ export default function InternshipPortfolio() {
               <span className="text-sm opacity-80">Internship Portfolio</span>
             </div>
             <h1 className="text-5xl md:text-6xl font-bold mt-2">{profile.name}</h1>
-            <p className="opacity-90 mt-1">Adarsh Secondary School • Teaching Intern</p>
+            <p className="opacity-90 mt-1">{profile.college} • {profile.institution}</p>
 
             <div className="flex gap-2 mt-4 flex-wrap">
               <Badge className="bg-white/20 backdrop-blur-sm border border-white/30 hover:bg-white/30 transition-all duration-300">B.Tech.Ed.IT</Badge>
-              <Badge className="bg-white/20 backdrop-blur-sm border border-white/30 hover:bg-white/30 transition-all duration-300">VPED 441</Badge>
-              <Badge className="bg-white/20 backdrop-blur-sm border border-white/30 hover:bg-white/30 transition-all duration-300">40 Hours Teaching</Badge>
+              <Badge className="bg-white/20 backdrop-blur-sm border border-white/30 hover:bg-white/30 transition-all duration-300">{profile.courseCode}</Badge>
+              <Badge className="bg-white/20 backdrop-blur-sm border border-white/30 hover:bg-white/30 transition-all duration-300">Academic Year {profile.academicYear}</Badge>
             </div>
           </div>
 
@@ -59,10 +61,10 @@ export default function InternshipPortfolio() {
       <div className="max-w-6xl mx-auto p-6 space-y-6">
 
         {/* Tabs Section */}
-        <Tabs value={activeTab} onValueChange={setActiveTab}>
+          <Tabs value={activeTab} onValueChange={setActiveTab}>
           <TabsList className="grid grid-cols-3 bg-gray-100 rounded-xl p-1">
             <TabsTrigger value="about">About</TabsTrigger>
-            <TabsTrigger value="journey">Journey</TabsTrigger>
+            <TabsTrigger value="goals">Goals</TabsTrigger>
             <TabsTrigger value="materials">Materials</TabsTrigger>
           </TabsList>
 
@@ -76,13 +78,13 @@ export default function InternshipPortfolio() {
                     <h2 className="text-xl font-semibold">About Me</h2>
                   </div>
                   <p className="text-gray-600">
-                    I am Kritigya Katwal, currently pursuing B.Tech.Ed.IT (7th Semester) from Kathmandu University. My internship at Adarsh Secondary School involves engaging students in IT courses including computer hardware assembly, software installation, programming fundamentals, and troubleshooting activities. My enthusiasm stems from a deep interest in technology and a keen desire to help students develop both theoretical knowledge and practical skills in the digital age. This internship provides an opportunity to translate technical expertise into effective teaching, while gaining real-world experience in lesson preparation, delivery, and evaluation.
+                    I&apos;m {profile.name}, a seventh-semester B.Tech.Ed.IT student at {profile.college}. I&apos;m doing a teaching internship at {profile.institution} as part of my academic journey. Through teaching and mentoring students in topics like computer foundations, networking, and programming, this internship enables me to explore the real-world setting of IT education. My passion for teaching comes from the desire to share knowledge, make difficult technological concepts understandable, and spark students&apos; curiosity. This internship serves as a link between theory and practice, helping me develop the pedagogical, technical, and interpersonal skills needed to become a successful IT educator.
                   </p>
 
                   <div className="grid md:grid-cols-3 gap-4 mt-4 text-sm">
-                    <div className="p-3 bg-gray-50 rounded-xl"><b>Institution:</b><br />{profile.institution}</div>
+                    <div className="p-3 bg-gray-50 rounded-xl"><b>College:</b><br />{profile.college}</div>
                     <div className="p-3 bg-gray-50 rounded-xl"><b>Course:</b><br />{profile.course}</div>
-                    <div className="p-3 bg-gray-50 rounded-xl"><b>Duration:</b><br />{profile.duration}</div>
+                    <div className="p-3 bg-gray-50 rounded-xl"><b>Internship Site:</b><br />{profile.institution}</div>
                   </div>
                 </CardContent>
               </Card>
@@ -122,11 +124,11 @@ export default function InternshipPortfolio() {
           </TabsContent>
 
           {/* Journey */}
-          <TabsContent value="journey">
+          <TabsContent value="goals">
             <div className="space-y-4 mt-4">
               <div className="bg-blue-50 border-l-4 border-blue-500 p-4 rounded-lg mb-4">
-                <h3 className="font-semibold text-blue-900 mb-2">Core Teaching Goals</h3>
-                <p className="text-sm text-blue-800">During this internship, I aim to achieve specific objectives that will enhance my development as an IT educator and prepare me for a successful career in IT education.</p>
+                <h3 className="font-semibold text-blue-900 mb-2">Teaching & Learning Goals</h3>
+                <p className="text-sm text-blue-800">My main goal is to become a capable and thoughtful instructor who can make IT education engaging, understandable, and meaningful.</p>
               </div>
               {journey.map((j, i) => (
                 <Card key={i} className="rounded-2xl hover:shadow-lg group transition">
