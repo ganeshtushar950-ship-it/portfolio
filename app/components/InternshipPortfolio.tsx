@@ -4,7 +4,7 @@ import { Card, CardContent } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
 import { Tabs, TabsList, TabsTrigger, TabsContent } from "@/components/ui/tabs";
 import { Badge } from "@/components/ui/badge";
-import { BookOpen, FolderOpen, User, Sparkles, LayoutGrid, GraduationCap, FileText, Video, ClipboardList, Download } from "lucide-react";
+import { BookOpen, User, Sparkles, LayoutGrid, GraduationCap, FileText, Video, ClipboardList, Download } from "lucide-react";
 import { useState } from "react";
 
 export default function InternshipPortfolio() {
@@ -16,6 +16,9 @@ export default function InternshipPortfolio() {
     duration: "40 Hours Teaching",
     role: "Teaching Intern",
   };
+
+  const drivePhotosFolderId = "10oqZ3-2ehk6yC4hzN9kv7kCDFdOgvjR1";
+  const drivePhotosFolderUrl = `https://drive.google.com/drive/folders/${drivePhotosFolderId}?usp=drive_link`;
 
   const journey = [
     { title: "Effective Lesson Planning", desc: "Develop instructional design skills combining theory with practical IT exercises and hands-on activities." },
@@ -187,7 +190,7 @@ export default function InternshipPortfolio() {
                       <p className="text-sm text-blue-700">Additional teaching materials, worksheets, and reference documents.</p>
                     </a>
                     <a
-                      href="https://drive.google.com/drive/folders/10oqZ3-2ehk6yC4hzN9kv7kCDFdOgvjR1?usp=drive_link"
+                      href={drivePhotosFolderUrl}
                       target="_blank"
                       rel="noopener noreferrer"
                       className="block p-4 bg-red-50 rounded-lg border border-red-200 hover:shadow-md hover:bg-red-100 group transition cursor-pointer"
@@ -217,6 +220,7 @@ export default function InternshipPortfolio() {
                       <p className="text-sm text-pink-700">Mentor feedback, evaluations, and assessment reports from internship.</p>
                     </a>
                   </div>
+
                   <div className="mt-6 flex justify-center">
                     <a
                       href="https://drive.google.com/drive/folders/1gtdbC8XiZMSNwn5p7dj6rCV5CQKvThOj?usp=drive_link"

@@ -1,20 +1,8 @@
-# ESLint Accessibility Fixes Progress
+# Task: Add another instance of photo.jpg to home page (Completed)
 
-**Previous Styling Updates**: ✅ Complete
+Previous content preserved above.
 
-**New Task: Fix jsx-a11y/alt-text ESLint errors in Gallery icons**
+## Completed:
+- Added second photo.jpg Image in HomePage.tsx "About Me" section (responsive rectangular layout beside text)
 
-**Step 1: Update TODO.md** - DONE
-
-**Step 2: Edit app/components/InternshipPortfolio.tsx** - PENDING
-- Add alt="" to 4 decorative <Image className="text-white" size={24} /> in Gallery section
-  - Classroom Activities card
-  - Farewell Picture card  
-  - Prize Distribution card
-  - Lab Documentation card
-
-**Step 3: Verify** - Run `npx eslint app/components/InternshipPortfolio.tsx`
-
-**Step 4: Test** - `npm run dev`
-
-**Step 5: Mark complete**
+Run `npm run dev` to view at localhost:3000

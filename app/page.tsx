@@ -1,5 +1,5 @@
-import InternshipPortfolio from "./components/InternshipPortfolio";
+import HomePage from "./components/HomePage";
 
 export default function Home() {
-  return <InternshipPortfolio />;
+  return <HomePage />;
 }
