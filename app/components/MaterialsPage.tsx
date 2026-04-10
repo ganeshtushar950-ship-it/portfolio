@@ -118,49 +118,49 @@ export default function MaterialsPage() {
 
   const resources = [
     {
-      href: "https://drive.google.com/drive/folders/1vI3ZIjTOVJPkwQ56lshXn7oneJ8bG12j?usp=drive_link",
+      href: "https://drive.google.com/drive/u/1/folders/1IqxKRZv70ls7RIwVza31ZH5ENsKI6xL8",
       icon: BookOpen,
       title: "Lesson Plans",
       description:
         "Structured lesson plans for IT courses including hardware, software, and programming topics.",
     },
     {
-      href: "https://drive.google.com/file/d/1Mlw5tGv2OZag4Odrt4VpUuWq9-EbM5HN/view?usp=sharing",
+      href: "https://drive.google.com/drive/u/1/folders/1fK-KQBZWu3f9WnzpR--nxha9Pu5cLesw",
       icon: FileText,
       title: "Syllabus",
       description:
         "Course syllabus, learning objectives, and curriculum outlines for IT education.",
     },
     {
-      href: "https://drive.google.com/drive/folders/1CrQyqzAi0g2WwAx-i8-yeewwsEVla2HU?usp=drive_link",
+      href: "https://drive.google.com/drive/u/1/folders/1o9HPyqgBFf_48mYLgu5SO98qsBnzniud",
       icon: ClipboardList,
       title: "Log Sheets",
       description:
         "Weekly reflections, observations, and progress notes from internship sessions.",
     },
     {
-      href: "https://drive.google.com/drive/folders/1gtdbC8XiZMSNwn5p7dj6rCV5CQKvThOj?usp=drive_link",
+      href: "https://drive.google.com/drive/u/1/folders/1qkVMkLBAKMywgOHJinfaUGTOdpuNqu1b",
       icon: LayoutGrid,
       title: "Learning Resources",
       description:
         "Additional teaching materials, worksheets, and reference documents.",
     },
     {
-      href: "https://drive.google.com/drive/folders/10oqZ3-2ehk6yC4hzN9kv7kCDFdOgvjR1?usp=drive_link",
+      href: "https://drive.google.com/drive/u/1/folders/1QYR2wzYzErHcW5cCt21lwMn3nGv9gk4S",
       icon: Video,
       title: "Videos & Photos",
       description:
         "Demonstration videos, tutorials, classroom photos, and lab documentation.",
     },
     {
-      href: "https://drive.google.com/drive/folders/1ZpNqHV-f8wRCkVIyrETKGzrVQFJaSVjA?usp=drive_link",
+      href: "https://drive.google.com/drive/u/1/folders/1eSwfnbVWx-x_0IBm3mItFntPszUyfuX3",
       icon: GraduationCap,
       title: "Signed Teaching Logs",
       description:
         "Official signed teaching logs and documentation from internship period.",
     },
     {
-      href: "https://drive.google.com/drive/folders/1W-wk6SrTAhna9fCpkekEqJCzZKt1e9s1?usp=drive_link",
+      href: "https://drive.google.com/drive/u/1/folders/1ghwBrWhHc08483u-QTTO2_8jLXfW1hXF",
       icon: User,
       title: "Mentor Evaluation",
       description:
